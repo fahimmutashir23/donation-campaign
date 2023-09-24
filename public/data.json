@@ -1,135 +1,135 @@
 [
     {
       "id": 1,
-      "title": "Emergency Food Supply",
+      "title": "Better Food for Everyone",
       "description": "Provide nutritious meals to families in need during crises.",
       "donation_price": 20,
-      "category": "food",
-      "Color_category_bg": "red",
-      "color_card_bg": "red",
-      "color_text_and_button_bg": "red",
-      "category_image": "food_image.jpg"
+      "category": "Food",
+      "Color_category_bg": "#C5FAD5",
+      "color_card_bg": "#E0A96D",
+      "color_text_and_button_bg": "DDC3A5",
+      "category_image": "https://i.ibb.co/FJMBFWd/Food.png"
     },
     {
       "id": 2,
-      "title": "Scholarship Fund",
+      "title": "Good education",
       "description": "Support underprivileged students in pursuing higher education.",
       "donation_price": 50,
-      "category": "education",
-      "Color_category_bg": "blue",
-      "color_card_bg": "blue",
-      "color_text_and_button_bg": "blue",
-      "category_image": "education_image.jpg"
+      "category": "Education",
+      "Color_category_bg": "#E7E8D1",
+      "color_card_bg": "#A7BEAE",
+      "color_text_and_button_bg": "#B85042",
+      "category_image": "https://i.ibb.co/N1C62jW/Education.png"
     },
     {
       "id": 3,
-      "title": "Medical Clinic Supplies",
+      "title": "Clean water for children",
       "description": "Equip a medical clinic with essential supplies for better healthcare.",
       "donation_price": 30,
-      "category": "health",
-      "Color_category_bg": "green",
-      "color_card_bg": "green",
-      "color_text_and_button_bg": "green",
-      "category_image": "health_image.jpg"
+      "category": "Health",
+      "Color_category_bg": "#79A7D3",
+      "color_card_bg": "#8A307F",
+      "color_text_and_button_bg": "#99F443",
+      "category_image": "https://i.ibb.co/2sL9dfT/Health.png"
     },
     {
       "id": 4,
-      "title": "Warm Clothing Drive",
+      "title": "Used Clothing Drive",
       "description": "Provide winter clothing to homeless individuals in your community.",
       "donation_price": 25,
-      "category": "clothing",
-      "Color_category_bg": "orange",
+      "category": "Clothing",
+      "Color_category_bg": "#CBD18F",
       "color_card_bg": "orange",
-      "color_text_and_button_bg": "orange",
-      "category_image": "clothing_image.jpg"
+      "color_text_and_button_bg": "#3A6B35",
+      "category_image": "https://i.ibb.co/Vmg6mdX/Clothing.png"
     },
     {
       "id": 5,
-      "title": "Meals for Seniors",
+      "title": "Better Food for Everyone",
       "description": "Support elderly citizens with daily nutritious meal deliveries.",
       "donation_price": 15,
-      "category": "food",
-      "Color_category_bg": "red",
-      "color_card_bg": "red",
-      "color_text_and_button_bg": "red",
-      "category_image": "food_image.jpg"
+      "category": "Food",
+      "Color_category_bg": "#C5FAD5",
+      "color_card_bg": "#E0A96D",
+      "color_text_and_button_bg": "DDC3A5",
+      "category_image": "https://i.ibb.co/FJMBFWd/Food.png"
     },
     {
       "id": 6,
-      "title": "Literacy Program",
+      "title": "Good education",
       "description": "Help adults improve their reading and writing skills through classes.",
       "donation_price": 40,
-      "category": "education",
-      "Color_category_bg": "blue",
-      "color_card_bg": "blue",
-      "color_text_and_button_bg": "blue",
-      "category_image": "education_image.jpg"
+      "category": "Education",
+      "Color_category_bg": "#E7E8D1",
+      "color_card_bg": "#A7BEAE",
+      "color_text_and_button_bg": "#B85042",
+      "category_image": "https://i.ibb.co/N1C62jW/Education.png"
     },
     {
       "id": 7,
-      "title": "Maternal Health Care",
+      "title": "Clean water for children",
       "description": "Ensure access to prenatal and postnatal care for expectant mothers.",
       "donation_price": 35,
-      "category": "health",
-      "Color_category_bg": "green",
-      "color_card_bg": "green",
-      "color_text_and_button_bg": "green",
-      "category_image": "health_image.jpg"
+      "category": "Health",
+      "Color_category_bg": "#79A7D3",
+      "color_card_bg": "#8A307F",
+      "color_text_and_button_bg": "#99F443",
+      "category_image": "https://i.ibb.co/2sL9dfT/Health.png"
     },
     {
       "id": 8,
-      "title": "Clothing for Children",
+      "title": "Used Clothing Drive",
       "description": "Supply clothing to underprivileged children in your area.",
       "donation_price": 20,
-      "category": "clothing",
-      "Color_category_bg": "orange",
+      "category": "Clothing",
+      "Color_category_bg": "#CBD18F",
       "color_card_bg": "orange",
-      "color_text_and_button_bg": "orange",
-      "category_image": "clothing_image.jpg"
+      "color_text_and_button_bg": "#3A6B35",
+      "category_image": "https://i.ibb.co/Vmg6mdX/Clothing.png"
     },
     {
       "id": 9,
-      "title": "Nutrition Education",
+      "title": "Better Food for Everyone",
       "description": "Teach families about healthy eating and cooking on a budget.",
       "donation_price": 25,
-      "category": "food",
-      "Color_category_bg": "red",
-      "color_card_bg": "red",
-      "color_text_and_button_bg": "red",
-      "category_image": "food_image.jpg"
+      "category": "Food",
+      "Color_category_bg": "#C5FAD5",
+      "color_card_bg": "#E0A96D",
+      "color_text_and_button_bg": "DDC3A5",
+      "category_image": "https://i.ibb.co/FJMBFWd/Food.png"
     },
     {
       "id": 10,
-      "title": "STEM Scholarships",
+      "title": "Good education",
       "description": "Support students pursuing STEM fields with scholarships.",
       "donation_price": 60,
-      "category": "education",
-      "Color_category_bg": "blue",
-      "color_card_bg": "blue",
-      "color_text_and_button_bg": "blue",
-      "category_image": "education_image.jpg"
+      "category": "Education",
+      "Color_category_bg": "#E7E8D1",
+      "color_card_bg": "#A7BEAE",
+      "color_text_and_button_bg": "#B85042",
+      "category_image": "https://i.ibb.co/N1C62jW/Education.png"
     },
     {
       "id": 11,
-      "title": "Mobile Health Clinics",
+      "title": "Clean water for children",
       "description": "Bring medical services to remote areas with mobile clinics.",
       "donation_price": 40,
-      "category": "health",
-      "Color_category_bg": "green",
-      "color_card_bg": "green",
-      "color_text_and_button_bg": "green",
-      "category_image": "health_image.jpg"
+      "category": "Health",
+      "Color_category_bg": "#79A7D3",
+      "color_card_bg": "#8A307F",
+      "color_text_and_button_bg": "#99F443",
+      "category_image": "https://i.ibb.co/2sL9dfT/Health.png"
     },
     {
       "id": 12,
-      "title": "Winter Coat Drive",
+      "title": "Used Clothing Drive",
       "description": "Collect warm coats for individuals in need during the cold season.",
       "donation_price": 30,
-      "category": "clothing",
-      "Color_category_bg": "orange",
+      "category": "Clothing",
+      "Color_category_bg": "#CBD18F",
       "color_card_bg": "orange",
-      "color_text_and_button_bg": "orange",
-      "category_image": "clothing_image.jpg"
+      "color_text_and_button_bg": "#3A6B35",
+      "category_image": "https://i.ibb.co/Vmg6mdX/Clothing.png"
     }
   ]
   
