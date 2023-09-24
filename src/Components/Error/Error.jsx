@@ -1,9 +1,10 @@
 
 
 const Error = () => {
+    
     return (
-        <div>
-            <h1 className="text-5xl"> error</h1>
+        <div className="flex justify-center items-center min-h-screen text-center">
+            <h1 className="text-5xl">Sorry!!! <br /> Donate not found</h1>
         </div>
     );
 };

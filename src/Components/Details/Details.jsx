@@ -1,34 +1,63 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
+import 'animate.css';
+import { saveLocalStorage } from "../../LocalStorage/storage";
 
 const Details = () => {
+  const detailsData = useLoaderData();
+  const { id } = useParams();
+  const [details, setDetails] = useState([]);
 
-    const detailsData = useLoaderData()
-    const {id} = useParams()
-    const [details, setDetails]= useState([])
-    console.log(details.category_image);
-    useEffect(()=>{
-        const details = detailsData.find(data => data.id == id)
-        setDetails(details)
+  useEffect(() => {
+    const details = detailsData.find((data) => data.id == id);
+    setDetails(details);
+  }, [id, detailsData]);
 
-    },[id, detailsData])
-    
-    return (
-        <div>
-            <div>
-                <div className="relative">
-                    <img src={details.category_image} alt="" className="w-full rounded-lg" />
-                    <div className="h-32 absolute bottom-0"></div>
-                </div>
-                <div className="mt-14 mb-6">
-                    <h1 className="text-4xl font-bold"></h1>
-                </div>
-                <div>
-                    <p className="text-base font-normal"></p>
-                </div>
-            </div>
+  const handleDonate = (id) => {
+    console.log(id);
+    saveLocalStorage(id)
+
+      Swal.fire({
+        title: 'Well done!!! You are successfully donating',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+  };
+
+  return (
+    <div>
+      <div>
+        <div className="relative mt-14 rounded-xl">
+          <div>
+            <img src={details.category_image} alt="" className="w-full" />
+          </div>
+          <div className="h-32 w-full bg-opacity-40 bg-black absolute bottom-0">
+            <button
+              onClick={() => handleDonate(details.id)}
+              className="btn my-9 ml-9"
+              style={{
+                backgroundColor: details.Color_category_bg,
+                color: details.color_text_and_button_bg,
+              }}
+            >
+              Donate ${details.donation_price}
+            </button>
+          </div>
         </div>
-    );
+        <div className="mt-14 mb-6">
+          <h1 className="text-4xl font-bold">{details.title}</h1>
+        </div>
+        <div>
+          <p className="text-base font-normal">{details.description}</p>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Details;
