@@ -1,4 +1,4 @@
-// import Card from "../Card/Card";
+
 import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SearchItem from "../SearchItem/SearchItem";
@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 
 const HomeContent = ({ inputData }) => {
   const datas = useLoaderData();
-
   const [input, setInput] = useState([]);
+
 
   useEffect(() => {
     const filterData = datas.filter((data) =>
@@ -15,15 +15,11 @@ const HomeContent = ({ inputData }) => {
       
     setInput(filterData);
   }, [datas, inputData]);
+  
 
   return (
     <div>
-      {/* <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-24">
-        {datas.map((data, idx) => (
-          <Card key={idx} data={data}></Card>
-        ))}
-      </div> */}
-
+      
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-24">
         {input.map((data) => (
           <SearchItem key={data.id} input={data}></SearchItem>

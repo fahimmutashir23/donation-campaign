@@ -1,8 +1,6 @@
-# React + Vite
+## 3 feature in this Project.
+* In this project show 12 donation section in 4 categories in home page. and you can search by category name and show only this category donation sector and when search you can write uppercase or lowercase. If you want see details in this donation click over the card and open details. Here you can donate to click donation button and open successfully donation toast.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* In this Donation page you can see which sector you donate. You can see 4 card together and your donation over 4 you can see (see more) button. Click this button and see all donation. After reload page your donation data still saved in the website.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* In the statistics page you can see a pie chart of your donation percentage from all donation.  Finally this website is fully responsive for every device.

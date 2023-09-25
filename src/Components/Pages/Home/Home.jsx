@@ -1,6 +1,5 @@
 
 import Banar from "../../Banar/Banar";
-// import HomeContent from "../../HomeContent/HomeContent";
 
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Banar></Banar>
-      {/* <HomeContent></HomeContent> */}
+      
     </div>
   );
 };

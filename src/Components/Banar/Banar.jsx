@@ -1,5 +1,3 @@
-// import { useEffect, useState } from "react";
-// import SearchItem from "../SearchItem/SearchItem";
 
 import { useState } from "react";
 import HomeContent from "../HomeContent/HomeContent";
@@ -8,16 +6,6 @@ import HomeContent from "../HomeContent/HomeContent";
 
 const Banar = () => {
 
-  // const [allData, setAllData] = useState([])
-  // const [input, setInput] = useState([]);
-  
-
-
-  // useEffect(()=>{
-  //   fetch("/public/data.json")
-  //   .then(res=> res.json())
-  //   .then(data => setAllData(data))
-  // },[])
   const [input , setInput] = useState([])
 
   const handleInput = e =>{
@@ -61,11 +49,6 @@ const Banar = () => {
         </div>
       </div>
 
-      {/* <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-24">
-          {
-            input.map(data => <SearchItem key={data.id} input ={data}></SearchItem>)
-          }
-      </div> */}
       <div>
           <HomeContent inputData={input}></HomeContent>
       </div>
