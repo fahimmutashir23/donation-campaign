@@ -15,7 +15,7 @@ const Details = () => {
   }, [id, detailsData]);
 
   const handleDonate = (id) => {
-    console.log(id);
+   
     saveLocalStorage(id)
 
       Swal.fire({
