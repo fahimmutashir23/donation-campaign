@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import 'animate.css';
-import { saveLocalStorage } from "../../LocalStorage/storage";
+import { getLocalStorage, saveLocalStorage } from "../../LocalStorage/storage";
 
 const Details = () => {
   const detailsData = useLoaderData();
@@ -15,11 +15,24 @@ const Details = () => {
   }, [id, detailsData]);
 
   const handleDonate = (id) => {
-   
-    saveLocalStorage(id)
+    const donateStorage = getLocalStorage();
+    const isExists = donateStorage.find(storeId => storeId == id)
+    if(!isExists){  
+      saveLocalStorage(id)
 
+        Swal.fire({
+          title: 'Well done!!! You are successfully donating',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
+    }
+    else{
       Swal.fire({
-        title: 'Well done!!! You are successfully donating',
+        title: 'Sorry!!! You are added this already',
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
         },
@@ -27,6 +40,7 @@ const Details = () => {
           popup: 'animate__animated animate__fadeOutUp'
         }
       })
+    }
   };
 
   return (
