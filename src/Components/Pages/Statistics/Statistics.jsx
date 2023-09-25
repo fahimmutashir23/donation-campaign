@@ -21,8 +21,8 @@ const Statistics = () => {
         <div className="flex justify-center mt-14">
             <Chart
                 type="pie"
-                width={1250}
-                height={500}
+                width={500}
+                
                 
                 series={[statisticsData.length, datas.length]}              
 

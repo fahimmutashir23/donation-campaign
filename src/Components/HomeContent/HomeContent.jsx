@@ -15,12 +15,12 @@ const HomeContent = ({ inputData }) => {
       
     setInput(filterData);
   }, [datas, inputData]);
-  
+
 
   return (
     <div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 px-3 lg:grid-cols-4 gap-6 mt-24">
         {input.map((data) => (
           <SearchItem key={data.id} input={data}></SearchItem>
         ))}
