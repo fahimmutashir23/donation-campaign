@@ -1,11 +1,10 @@
 
-import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SearchItem from "../SearchItem/SearchItem";
 import PropTypes from 'prop-types';
 
-const HomeContent = ({ inputData }) => {
-  const datas = useLoaderData();
+const HomeContent = ({ inputData, datas }) => {
+
   const [input, setInput] = useState([]);
 
 
@@ -30,7 +29,8 @@ const HomeContent = ({ inputData }) => {
 };
 
 HomeContent.propTypes = {
-  inputData: PropTypes.string
+  inputData: PropTypes.string,
+  datas: PropTypes.array
 };
 
 export default HomeContent;

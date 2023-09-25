@@ -1,10 +1,11 @@
 
 import { useState } from "react";
 import HomeContent from "../HomeContent/HomeContent";
+import PropTypes from 'prop-types';
 
 
 
-const Banar = () => {
+const Banar = ({datas}) => {
 
   const [input , setInput] = useState([])
 
@@ -50,10 +51,14 @@ const Banar = () => {
       </div>
 
       <div>
-          <HomeContent inputData={input}></HomeContent>
+          <HomeContent inputData={input} datas={datas}></HomeContent>
       </div>
     </div>
   );
+};
+
+Banar.propTypes = {
+  datas: PropTypes.array
 };
 
 export default Banar;
