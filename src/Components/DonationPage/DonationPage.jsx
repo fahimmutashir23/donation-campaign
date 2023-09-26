@@ -31,15 +31,15 @@ const DonationPage = ({ donation }) => {
           </h2>
          <div>
          <h2
-            className="text-xl font-semibold"
-            style={{ color: color_text_and_button_bg }}
+            className="text-xl font-semibold text-black"
+
           >
             {title}
           </h2>
           <p className="text-base font-semibold" style={{color: color_text_and_button_bg}}>${donation_price}</p>
          </div>
 
-          <Link className="btn btn-sm border-none" style={{backgroundColor: color_text_and_button_bg, color: color_card_bg}} to={`/details/${id}`}>
+          <Link className="btn btn-sm border-none text-white" style={{backgroundColor: color_text_and_button_bg}} to={`/details/${id}`}>
           View Details
           </Link>
         </div>
