@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import SearchItem from "../SearchItem/SearchItem";
 import PropTypes from 'prop-types';
+// import Card from "../Card/Card";
 
 const HomeContent = ({ inputData, datas }) => {
 
@@ -9,12 +10,17 @@ const HomeContent = ({ inputData, datas }) => {
 
 
   useEffect(() => {
-    const filterData = datas.filter((data) =>
-      data.category.toLowerCase().includes(inputData));
-      
-    setInput(filterData);
-  }, [datas, inputData]);
 
+    const filterData = datas.filter((data) => data.category.toLowerCase() == inputData);
+    console.log(filterData)
+    if(filterData.length > 0){
+      setInput(filterData);
+    }
+    else{
+      setInput(datas)
+    }
+
+  }, [datas, inputData]);
 
   return (
     <div>
@@ -24,6 +30,7 @@ const HomeContent = ({ inputData, datas }) => {
           <SearchItem key={data.id} input={data}></SearchItem>
         ))}
       </div>
+
     </div>
   );
 };
