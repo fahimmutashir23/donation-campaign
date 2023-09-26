@@ -7,8 +7,7 @@ const Statistics = () => {
 
     const datas = useLoaderData();
     const [statisticsData, setStatisticsData] = useState([]);
-  console.log(statisticsData.length);
-  console.log(datas.length)
+
 
     useEffect(()=>{
       const storeData = getLocalStorage();

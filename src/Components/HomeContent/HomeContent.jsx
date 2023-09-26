@@ -29,7 +29,7 @@ const HomeContent = ({ inputData, datas }) => {
 };
 
 HomeContent.propTypes = {
-  inputData: PropTypes.string,
+  inputData: PropTypes.array,
   datas: PropTypes.array
 };
 

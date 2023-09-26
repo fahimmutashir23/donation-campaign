@@ -11,9 +11,7 @@ const Donation = () => {
     const getStore = localStorage.getItem("donation");
 
     if (getStore.length > 0) {
-      const donateList = donationData.filter((data) =>
-        getStore.includes(data.id)
-      );
+      const donateList = donationData.filter((data) => getStore.includes(data.id));
       setDonation(donateList);
     }
   }, [donationData]);

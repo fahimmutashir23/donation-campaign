@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import 'animate.css';
-import { getLocalStorage, saveLocalStorage } from "../../LocalStorage/storage";
+import { saveLocalStorage } from "../../LocalStorage/storage";
 
 const Details = () => {
   const detailsData = useLoaderData();
@@ -15,32 +15,17 @@ const Details = () => {
   }, [id, detailsData]);
 
   const handleDonate = (id) => {
-    const donateStorage = getLocalStorage();
-    const isExists = donateStorage.find(storeId => storeId == id)
-    if(!isExists){  
-      saveLocalStorage(id)
+    saveLocalStorage(id)
 
-        Swal.fire({
-          title: 'Well done!!! You are successfully donating',
-          showClass: {
-            popup: 'animate__animated animate__fadeInDown'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__fadeOutUp'
-          }
-        })
-    }
-    else{
-      Swal.fire({
-        title: 'Sorry!!! You are added this already',
-        showClass: {
-          popup: 'animate__animated animate__fadeInDown'
-        },
-        hideClass: {
-          popup: 'animate__animated animate__fadeOutUp'
-        }
-      })
-    }
+    Swal.fire({
+      title: 'Well done!!! You are successfully donating',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
   };
 
   return (
@@ -55,8 +40,8 @@ const Details = () => {
               onClick={() => handleDonate(details.id)}
               className="btn my-9 ml-9"
               style={{
-                backgroundColor: details.Color_category_bg,
-                color: details.color_text_and_button_bg,
+                backgroundColor: details.color_text_and_button_bg,
+                color: details.color_card_bg,
               }}
             >
               Donate ${details.donation_price}
