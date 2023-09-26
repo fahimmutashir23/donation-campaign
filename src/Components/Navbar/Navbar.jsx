@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
       <div className="navbar bg-transparent flex flex-col md:flex-row gap-4">
         <div className="flex-1">
-          <img src="/src/assets/Logo.png" alt="" />
+          <img src='https://i.ibb.co/LYvFCFF/logo.png' alt="" />
         </div>
         <div className="flex-none">
           <ul className="flex space-x-12">

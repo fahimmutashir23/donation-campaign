@@ -21,7 +21,7 @@ const Banar = ({datas}) => {
       <div
         className="hero h-96 "
         style={{
-          backgroundImage: "url(/src/assets/banner.jpg)",
+          backgroundImage: "url(https://i.ibb.co/5jzMgpd/banner.jpg)",
         }}
       >
         <div className="hero-overlay bg-opacity-90 bg-white"></div>
