@@ -21,7 +21,7 @@ const Donation = () => {
 
   return (
     <div>
-      <div className="mt-14 px-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="mt-14 px-3 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
         {
             isShow?
             donations.map((donation, idx) => (
