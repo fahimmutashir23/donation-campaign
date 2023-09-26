@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 const Banar = ({datas}) => {
 
-  const [input , setInput] = useState([])
+  const [input, setInput] = useState([])
 
   const handleInput = e =>{
       e.preventDefault()

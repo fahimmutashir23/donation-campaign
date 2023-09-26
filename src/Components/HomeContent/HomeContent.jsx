@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import SearchItem from "../SearchItem/SearchItem";
 import PropTypes from 'prop-types';
-// import Card from "../Card/Card";
+
 
 const HomeContent = ({ inputData, datas }) => {
 
@@ -12,7 +12,7 @@ const HomeContent = ({ inputData, datas }) => {
   useEffect(() => {
 
     const filterData = datas.filter((data) => data.category.toLowerCase() == inputData);
-    console.log(filterData)
+
     if(filterData.length > 0){
       setInput(filterData);
     }
@@ -24,7 +24,7 @@ const HomeContent = ({ inputData, datas }) => {
 
   return (
     <div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 px-3 lg:grid-cols-4 gap-6 mt-24">
         {input.map((data) => (
           <SearchItem key={data.id} input={data}></SearchItem>
