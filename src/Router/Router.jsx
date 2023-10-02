@@ -5,6 +5,9 @@ import Donation from "../Components/Pages/Donation/Donation";
 import Statistics from "../Components/Pages/Statistics/Statistics";
 import Error from "../Components/Error/Error";
 import Details from "../Components/Details/Details";
+import Login from "../Components/Pages/Login/Login";
+import Registration from "../Components/Pages/Registration/Registration";
+import PrivetRoute from "../PrivetRoute/PrivetRoute";
 
 const Router = createBrowserRouter([
     {
@@ -19,18 +22,26 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/donation",
-                element: <Donation></Donation>,
+                element: <PrivetRoute><Donation></Donation></PrivetRoute>,
                 loader: () => fetch('/data.json')
             },
             {
                 path: "/statistics",
-                element: <Statistics></Statistics>,
+                element: <PrivetRoute><Statistics></Statistics></PrivetRoute>,
                 loader: () => fetch('/data.json')
             },
             {
                 path: "/details/:id",
                 element: <Details></Details>,
                 loader: () => fetch(`/data.json`)
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: "/registration",
+                element: <Registration></Registration>
             }
         ]
     }
